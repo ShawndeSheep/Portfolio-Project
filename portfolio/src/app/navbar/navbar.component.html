@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg" style="background-color: rgb(30, 30, 30)">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"
+      ><b style="font-size: 2rem; color: white">Shawn</b
+      ><b style="color: aqua">.</b></a
+    >
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="#"
+            style="margin-top: 0.5rem; cursor: pointer"
+            [ngStyle]="{ color: currentRoute === '/' ? 'aqua' : 'white' }"
+            ><b>Home</b></a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            (click)="myWork()"
+            class="nav-link active"
+            aria-current="page"
+            style="margin-top: 0.5rem; cursor: pointer"
+            [ngStyle]="{ color: currentRoute === '/mywork' ? 'aqua' : 'white' }"
+            ><b>My Work</b></a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            (click)="resume()"
+            class="nav-link active"
+            aria-current="page"
+            style="margin-top: 0.5rem; cursor: pointer"
+            [ngStyle]="{ color: currentRoute === '/resume' ? 'aqua' : 'white' }"
+            ><b>Resume</b></a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            (click)="contact()"
+            class="nav-link active"
+            aria-current="page"
+            style="margin-top: 0.5rem; cursor: pointer"
+            [ngStyle]="{
+              color: currentRoute === '/contact' ? 'aqua' : 'white'
+            }"
+            ><b>Contact</b></a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
