@@ -1,0 +1,17 @@
+.resumebtn {
+  background: rgb(80, 80, 80);
+  color: white;
+  border: none;
+  margin: 0.2rem;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 10px;
+  margin-right: 1rem;
+  padding-left: 15px;
+}
+.resumebtnSelected {
+  background: rgb(50, 50, 50);
+}
+.resumebtn:hover {
+  color: aqua;
+}

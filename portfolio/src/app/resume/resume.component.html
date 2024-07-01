@@ -1,1 +1,39 @@
-<p>resume works!</p>
+<div style="color: white; margin-left: 5%">
+  <p style="display: block; padding-bottom: -0rem; font-size: 3rem">
+    &lt;<b>Get </b> <i>to know </i>
+    <b
+      style="
+        background: linear-gradient(to right, aqua, lightblue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      "
+    >
+      me more! </b
+    >/&gt;
+  </p>
+  <div class="buttoncontainer">
+    <button
+      class="resumebtn"
+      (click)="experience()"
+      [ngClass]="{ resumebtnSelected: resumeState === 0 }"
+    >
+      Experience 🧪
+    </button>
+
+    <button
+      class="resumebtn"
+      (click)="education()"
+      [ngClass]="{ resumebtnSelected: resumeState === 1 }"
+    >
+      Education 🎓
+    </button>
+    <button
+      class="resumebtn"
+      (click)="specializations()"
+      [ngClass]="{ resumebtnSelected: resumeState === 2 }"
+    >
+      Specializations 📚
+    </button>
+  </div>
+</div>
+<div class="experience"></div>
