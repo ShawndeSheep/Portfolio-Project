@@ -1,12 +1,26 @@
-<div class="card" style="width: 18rem">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-    <p class="card-text">
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </p>
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
+<div
+  class="card text-white mt-2"
+  style="width: 18rem; background-color: rgb(50, 50, 50)"
+>
+  <div class="card-body" style="margin-bottom: -1rem">
+    <h5 class="card-title" style="color: rgb(200, 200, 200)">
+      <b>{{ data.title }}</b>
+    </h5>
+    <button
+      type="button"
+      class="btn"
+      [ngClass]="{
+        'btn-primary': data.type === 'Internship',
+        'btn-success': data.type === 'Certification',
+        'btn-warning': data.type === 'Personal Development'
+      }"
+      style="height: 2rem; border-radius: 1rem; padding-top: 0.1rem"
+    >
+      {{ data.type }}
+    </button>
+    <h6 class="mt-3" style="font-family: 'Courier New', Courier, monospace">
+      <b>{{ data.location }}</b>
+    </h6>
+    <p style="color: aqua">{{ data.duration }}</p>
   </div>
 </div>

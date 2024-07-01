@@ -39,18 +39,51 @@ export class ResumeService {
         location: 'AWS Academy',
         duration: '2024',
       },
+      {
+        title: 'GDG Facilitator',
+        description:
+          'Google Developer Group Event Facilitator: Build with AI - May 2024 @Yarra Ballroom',
+        type: 'Personal Development',
+        location: 'GDG Event',
+        duration: '2024',
+      },
+      {
+        title: 'Associate Professor Assistant',
+        description:
+          'Associate Professor Assistant for Ms Esther Setiawan https://www.linkedin.com/in/esthersetiawan/',
+        type: 'Personal Development',
+        location: 'ISTTS',
+        duration: '2024-2025',
+      },
     ];
     return exp;
   }
   getEducation(): resumeClass[] {
     const edu: resumeClass[] = [
       {
-        title: 'Cloud Foundation',
-        description: 'Certified for AWS Cloud foundational architecture exam',
-        type: 'Certification',
+        title: 'Senior High School',
+        description: 'High School at Masa Depan Cerah Christian School',
+        type: 'Academics',
         location: 'Masa Depan Cerah, Surabaya',
         duration: '2019-2021',
       },
+      {
+        title: 'Undergraduate: Computer Science',
+        description:
+          'Went undergraduate (S1) at Institut Sains dan Teknologi Terpadu Surabaya',
+        type: 'Academics',
+        location: 'ISTTS',
+        duration: '2021-2025',
+      },
+      {
+        title: 'Master Degree: Computer Science',
+        description:
+          'Ongoing master degree at ISTTS through fast-track program',
+        type: 'Academics',
+        location: 'ISTTS',
+        duration: '2025-2026',
+      },
     ];
+    return edu;
   }
 }
