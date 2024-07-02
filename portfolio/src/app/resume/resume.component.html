@@ -36,10 +36,77 @@
     </button>
   </div>
 </div>
-<div class="experience" style="margin-left: 5%; margin-bottom: 10%">
+<div
+  class="experience"
+  style="margin-left: 5%; padding-bottom: 4rem"
+  *ngIf="resumeState === 0 || resumeState === 1"
+>
   <div class="row">
     <div class="col-md-3" *ngFor="let data of templist; let i = index">
       <app-card [data]="data" [index]="i"></app-card>
+    </div>
+  </div>
+</div>
+<div style="margin-left: 5%; padding-bottom: 4rem" *ngIf="resumeState === 2">
+  <div
+    class="cards-container"
+    style="display: flex; gap: 1rem; flex-wrap: wrap"
+  >
+    <div
+      class="card mt-2 text-light"
+      style="width: 20rem; background-color: rgb(60, 60, 60)"
+    >
+      <img
+        src="https://wallpaperaccess.com/full/3239444.jpg"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">
+          <b style="color: aqua">Frontend & UI/UX Developer</b>
+        </h5>
+        <p class="card-text">
+          Master in Frontend Web Development and its frameworks such as React
+          and Angular
+        </p>
+      </div>
+    </div>
+    <div
+      class="card mt-2 text-light"
+      style="width: 20rem; background-color: rgb(60, 60, 60)"
+    >
+      <img
+        src="https://plopdo.com/wp-content/uploads/2021/10/What-is-back-end-development-2.jpg"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">
+          <b style="color: aqua">Backend Developer</b>
+        </h5>
+        <p class="card-text">
+          Equipped with backend skills including development of REST API
+        </p>
+      </div>
+    </div>
+    <div
+      class="card mt-2 text-light"
+      style="width: 20rem; background-color: rgb(60, 60, 60)"
+    >
+      <img
+        src="https://learn.g2.com/hubfs/_learn-what-is-artificial-intelligence@2x.png"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">
+          <b style="color: aqua">ML Engineer</b>
+        </h5>
+        <p class="card-text">
+          Implementing Artificial Intelligence or Machine Learning for your
+          business case.
+        </p>
+      </div>
     </div>
   </div>
 </div>

@@ -15,18 +15,16 @@ export class ResumeComponent {
   constructor(private service: ResumeService) {}
   templist: any[] = [];
   ngOnInit(): void {
-    if (this.resumeState === 0) {
-      this.templist = this.service.getExperience();
-    } else if (this.resumeState === 1) {
-      this.templist = this.service.getEducation();
-    }
+    this.templist = this.service.getExperience();
   }
   resumeState: number = 0;
   experience() {
     this.resumeState = 0;
+    this.templist = this.service.getExperience();
   }
   education() {
     this.resumeState = 1;
+    this.templist = this.service.getEducation();
   }
   specializations() {
     this.resumeState = 2;

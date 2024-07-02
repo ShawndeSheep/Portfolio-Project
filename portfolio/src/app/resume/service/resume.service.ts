@@ -55,6 +55,14 @@ export class ResumeService {
         location: 'ISTTS',
         duration: '2024-2025',
       },
+      {
+        title: 'IT and Design Support',
+        description:
+          'Remote IT Support, Web Developer and Graphic Design for Raja Steel Bojonegoro and Tuban',
+        type: 'Personal Development',
+        location: 'Raja Steel Tuban & Bojonegoro',
+        duration: '2024-2025',
+      },
     ];
     return exp;
   }
